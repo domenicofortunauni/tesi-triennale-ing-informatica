@@ -1,0 +1,35 @@
+# Laboratorio Tesi: due container sulla stessa rete.
+#   - db  : MariaDB, non esposto all'esterno (raggiungibile solo dall'app)
+#   - app : l'applicazione Flask vulnerabile, raggiungibile da localhost:8080
+# Avvio:   docker compose up --build
+# Stop:    docker compose down  (opzione -v per azzerare il volume del DB)
+
+services:
+  db:
+    image: mariadb:11.4
+    environment:
+      MARIADB_ROOT_PASSWORD: rootpw
+      MARIADB_DATABASE: labtesi
+      MARIADB_USER: shop
+      MARIADB_PASSWORD: shop
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  app:
+    build: .
+    container_name: labtesi-app
+    environment:
+      DB_HOST: db
+      DB_PORT: "3306"
+      DB_USER: shop
+      DB_PASSWORD: shop
+      DB_NAME: labtesi
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8080:5000"

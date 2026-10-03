@@ -1,0 +1,137 @@
+2010375	ET EXPLOIT Possible Oracle Database Text Component ctxsys.drvxtabc.create_tables Remote SQL Injection Attempt
+2018288	ET EXPLOIT Joomla 3.2.1 SQL injection attempt
+2018289	ET EXPLOIT Joomla 3.2.1 SQL injection attempt 2
+2033411	ET EXPLOIT Cisco Data Center Network Manager SQL Injection Inbound (CVE-2019-15984)
+2035018	ET EXPLOIT MetInfo 7.0 SQL Injection (CVE-2019-17418)
+2035019	ET EXPLOIT MetInfo 7.0 SQL Injection (CVE-2019-16997)
+2035104	ET EXPLOIT VMware SD-WAN Orchestrator SQL Injection (CVE-2020-3984)
+2034492	ET EXPLOIT Kaseya VSA ManagedITSync SQL Injection (CVE-2017-18362)
+2038696	ET EXPLOIT Possible SAP NetWeaver SQL Injection Attempt Inbound (CVE-2016-2386)
+2053409	ET EXPLOIT Hongjing eHR Showmedia.jsp SQL Injection Inbound
+2053444	ET EXPLOIT Zhibang International ERP System SQL Injection Attempt
+2058432	ET EXPLOIT Fortinet FortiClient EMS SQL Injection (CVE-2023-48788)
+2060144	ET EXPLOIT PostgreSQL psql SQL Injection (CVE-2025-1094)
+2062512	ET EXPLOIT RSI Queue Unauthenticated Blind SQL Injection (CVE-2025-26086)
+2066335	ET EXPLOIT Synology Driver Server SQL Injection (CVE-2024-50631)
+2009981	ET FTP Possible FTP Daemon Username SELECT FROM SQL Injection Attempt
+2009982	ET FTP Possible FTP Daemon Username DELETE FROM SQL Injection Attempt
+2009983	ET FTP Possible FTP Daemon Username INSERT INTO SQL Injection Attempt
+2009984	ET FTP Possible FTP Daemon Username UPDATE SET SQL Injection Attempt
+2009985	ET FTP Possible FTP Daemon Username UNION SELECT SQL Injection Attempt
+2010081	ET FTP Possible FTP Daemon Username INTO OUTFILE SQL Injection Attempt
+2008654	ET SCAN SQLix SQL Injection Vector Scan
+2009882	ET SCAN Default Mysqloit User Agent Detected - Mysql Injection Takover Tool
+2009883	ET SCAN Possible Mysqloit Operating System Fingerprint/SQL Injection Test Scan Detected
+2010087	ET SCAN Suspicious User-Agent Containing SQL Inject/ion Likely SQL Injection Scanner
+2008362	ET SCAN bsqlbf Brute Force SQL Injection
+2010215	ET SCAN SQL Injection Attempt (Agent uil2pn)
+2009555	ET SCAN Absinthe SQL Injection Tool HTTP Header Detected
+2009833	ET SCAN WITOOL SQL Injection Scan
+2012606	ET SCAN Havij SQL Injection Tool User-Agent Inbound
+2011924	ET SCAN Havij SQL Injection Tool User-Agent Outbound
+2008538	ET SCAN Sqlmap SQL Injection Scan
+2008729	ET SCAN Mini MySqlatOr SQL Injection Scanner
+2009769	ET SCAN SQL Power Injector SQL Injection User Agent Detected
+2011035	ET WEB_SERVER SQL Injection BULK INSERT in URI to Insert File Content into Database Table
+2016935	ET WEB_SERVER SQL Injection Select Sleep Time Delay
+2010963	ET WEB_SERVER SELECT USER SQL Injection Attempt in URI
+2010966	ET WEB_SERVER SHOW CURDATE/CURTIME SQL Injection Attempt in URI
+2010967	ET WEB_SERVER SHOW TABLES SQL Injection Attempt in URI
+2011039	ET WEB_SERVER Possible INSERT VALUES SQL Injection Attempt
+2010284	ET WEB_SERVER SELECT INSTR in URI Possible ORACLE Related Blind SQL Injection Attempt
+2010965	ET WEB_SERVER SHOW VARIABLES SQL Injection Attempt in URI
+2015749	ET WEB_SERVER Possible Oracle SQL Injection utl_inaddr call in URI
+2010084	ET WEB_SERVER Possible ALTER SQL Injection Attempt
+2010085	ET WEB_SERVER Possible DROP SQL Injection Attempt
+2010086	ET WEB_SERVER Possible CREATE SQL Injection Attempt in URI
+2010621	ET WEB_SERVER SQL Injection Attempt (Agent CZ32ts)
+2009029	ET WEB_SERVER SQL Injection Attempt (Agent NV32ts)
+2010964	ET WEB_SERVER SHOW CHARACTER SET SQL Injection Attempt in URI
+2011174	ET WEB_SERVER SQL Injection Attempt (Agent CZxt2s)
+2053441	ET WEB_SERVER Possible SQL Injection (varchar2) in HTTP Request Body
+2053443	ET WEB_SERVER Possible SQL Injection CHAR() in HTTP Request Body M1
+2053446	ET WEB_SERVER Possible SQL Injection CHAR() in HTTP Request Body M2
+2053449	ET WEB_SERVER Possible SQL Injection CHR() in HTTP Request Body M1
+2053452	ET WEB_SERVER Possible SQL Injection CHR() in HTTP Request Body M2
+2053456	ET WEB_SERVER Possible SQL Injection sp_configure in HTTP Request Body
+2053460	ET WEB_SERVER Possible SQL Injection (varchar) in HTTP Request Body
+2053461	ET WEB_SERVER Possible SQL Injection (exec) in HTTP Request Body
+2053462	ET WEB_SERVER Possible SQL Injection (declare) in HTTP Request Body
+2053463	ET WEB_SERVER Possible SQL Injection INTO OUTFILE in HTTP Request Body
+2053464	ET WEB_SERVER Possible SQL Injection Obfuscated by REVERSE function in HTTP Request Body
+2053465	ET WEB_SERVER Possible SQL Injection SELECT CONCAT in HTTP Request Body
+2053468	ET WEB_SERVER Possible SQL Injection UNION SELECT in HTTP Request Body
+2053467	ET WEB_SERVER Possible SQL Injection SELECT CAST in HTTP URI
+2011122	ET WEB_SERVER Possible SQL injection obfuscated via REVERSE function in HTTP URI
+2053479	ET WEB_SERVER Possible SQL Injection WAITFOR DELAY in HTTP URI
+2053480	ET WEB_SERVER Possible SQL injection WAITFOR DELAY in HTTP Request Body
+2016936	ET WEB_SERVER SQL Injection Local File Access Attempt Using LOAD_FILE
+2053458	ET WEB_SERVER Possible SQL Injection INSERT INTO in HTTP Request Body
+2053466	ET WEB_SERVER Possible SQL Injection SELECT CAST in HTTP Request Body
+2053457	ET WEB_SERVER Possible SQL Injection DELETE FROM in HTTP Request Body
+2053459	ET WEB_SERVER Possible SQL Injection SELECT FROM in HTTP Request Body
+2006444	ET WEB_SERVER Possible SQL Injection Attempt INSERT INTO in HTTP URI
+2010285	ET WEB_SERVER SELECT SUBSTR/ING in URI Possible Blind SQL Injection Attempt
+2006443	ET WEB_SERVER Possible SQL Injection Attempt DELETE FROM in HTTP URI
+2006446	ET WEB_SERVER Possible SQL Injection Attempt UNION SELECT in HTTP URI
+2008175	ET WEB_SERVER Possible SQL Injection (varchar) in HTTP URI
+2008176	ET WEB_SERVER Possible SQL Injection (exec) in HTTP URI
+2008467	ET WEB_SERVER Possible SQL Injection Attempt Danmec related (declare) in HTTP URI
+2010037	ET WEB_SERVER Possible SQL Injection INTO OUTFILE Arbitrary File Write Attempt in HTTP URI
+2011042	ET WEB_SERVER Possible SQL Injection SELECT CONCAT in HTTP URI
+2011424	ET WEB_SERVER Possible SQL Injection Using MSSQL sp_configure Command in HTTP URI
+2014352	ET WEB_SERVER Possible SQL Injection Attempt char() Danmec related in HTTP URI
+2016596	ET WEB_SERVER Possible SQL Injection (varchar2) in HTTP URI
+2025744	ET WEB_SPECIFIC_APPS Joomla Component Ek rishta 2.10 - SQL Injection 1
+2025819	ET WEB_SPECIFIC_APPS Elektronischer Leitz-Ordner 10 - SQL Injection
+2005304	ET WEB_SPECIFIC_APPS W2B Online Banking SQL Injection Attempt -- mailer.w2b draft SELECT
+2005305	ET WEB_SPECIFIC_APPS W2B Online Banking SQL Injection Attempt -- mailer.w2b draft UNION SELECT
+2005306	ET WEB_SPECIFIC_APPS W2B Online Banking SQL Injection Attempt -- mailer.w2b draft INSERT
+2005307	ET WEB_SPECIFIC_APPS W2B Online Banking SQL Injection Attempt -- mailer.w2b draft DELETE
+2005308	ET WEB_SPECIFIC_APPS W2B Online Banking SQL Injection Attempt -- mailer.w2b draft ASCII
+2005309	ET WEB_SPECIFIC_APPS W2B Online Banking SQL Injection Attempt -- mailer.w2b draft UPDATE
+2005310	ET WEB_SPECIFIC_APPS W2B Online Banking SQL Injection Attempt -- DocPay.w2b listDocPay SELECT
+2005187	ET WEB_SPECIFIC_APPS W2B Online Banking SQL Injection Attempt -- DocPay.w2b listDocPay UNION SELECT
+2005188	ET WEB_SPECIFIC_APPS W2B Online Banking SQL Injection Attempt -- DocPay.w2b listDocPay INSERT
+2005189	ET WEB_SPECIFIC_APPS W2B Online Banking SQL Injection Attempt -- DocPay.w2b listDocPay DELETE
+2005190	ET WEB_SPECIFIC_APPS W2B Online Banking SQL Injection Attempt -- DocPay.w2b listDocPay ASCII
+2005191	ET WEB_SPECIFIC_APPS W2B Online Banking SQL Injection Attempt -- DocPay.w2b listDocPay UPDATE
+2005061	ET WEB_SPECIFIC_APPS ACGVannu SQL Injection Attempt -- modif.html id_mod ASCII
+2005062	ET WEB_SPECIFIC_APPS ACGVannu SQL Injection Attempt -- modif.html id_mod UPDATE
+2005057	ET WEB_SPECIFIC_APPS ACGVannu SQL Injection Attempt -- modif.html id_mod SELECT
+2005058	ET WEB_SPECIFIC_APPS ACGVannu SQL Injection Attempt -- modif.html id_mod UNION SELECT
+2005059	ET WEB_SPECIFIC_APPS ACGVannu SQL Injection Attempt -- modif.html id_mod INSERT
+2005060	ET WEB_SPECIFIC_APPS ACGVannu SQL Injection Attempt -- modif.html id_mod DELETE
+2033403	ET WEB_SPECIFIC_APPS Apache SkyWalking GraphQL SQL Injection Inbound (CVE-2020-13921)
+2009513	ET WEB_SPECIFIC_APPS Possible Rentventory SQL Injection Attempt
+2010673	ET WEB_SPECIFIC_APPS Possible Zenoss Network Monitoring Application UNTION SELECT SQL Injection Attempt
+2010672	ET WEB_SPECIFIC_APPS Possible Zenoss Network Monitoring Application INSERT INTO SQL Injection Attempt
+2010670	ET WEB_SPECIFIC_APPS Possible Zenoss Network Monitoring Application SELECT FROM SQL Injection Attempt
+2010669	ET WEB_SPECIFIC_APPS Possible Zenoss Network Monitoring Application INTO OUTFILE SQL Injection Attempt
+2049386	ET WEB_SPECIFIC_APPS Jiecheng Management Information System CWSFinanceCommon SQL injection
+2056391	ET WEB_SPECIFIC_APPS Ivanti EPM SQL Injection (CVE-2024-29824)
+2057436	ET WEB_SPECIFIC_APPS Mura CMS SQL Injection via processAsyncObject API Method (CVE-2024-32640)
+2056768	ET WEB_SPECIFIC_APPS Grafana Post-Authentication DuckDB SQL Injection (CVE-2024-9264)
+2056183	ET WEB_SPECIFIC_APPS F5 BIG-IP Next Central Manager SQL Injection (CVE-2024-26026)
+2055989	ET WEB_SPECIFIC_APPS Zabbix Server Blind SQL Injection via clientip Parameter (CVE-2024-22120)
+2049926	ET WEB_SPECIFIC_APPS GL.iNet Authentication Bypass/SQL Injection attempt (CVE-2023-50919)
+2055983	ET WEB_SPECIFIC_APPS Progress WhatsUp Gold HasErrors SQL Injection Authentication Bypass (CVE-2024-6670)
+2059681	ET WEB_SPECIFIC_APPS Microsoft Configuration Manager Unauthenticated SQL Injection (CVE-2024-43468)
+2060814	ET WEB_SPECIFIC_APPS GLPI Pre-auth SQL Injection (CVE-2025-24799)
+2061770	ET WEB_SPECIFIC_APPS GLPI < 10.0.17 Pre-Auth SQL Injection (CVE-2025-24799)
+2062742	ET WEB_SPECIFIC_APPS Infoblox NetMRI login.tdf skipjackUsername Parameter SQL Injection Attempt - Credential Theft (CVE-2025-32814)
+2062745	ET WEB_SPECIFIC_APPS Infoblox NetMRI Run.tdf Scripts Parameter SQL Injection Attempt - Credential theft (CVE-2024-52874)
+2063426	ET WEB_SPECIFIC_APPS Fortinet FortiWeb Fabric Connector Unauthenticated SQL Injection (CVE-2025-25257) M1
+2063427	ET WEB_SPECIFIC_APPS Fortinet FortiWeb Fabric Connector Unauthenticated SQL Injection (CVE-2025-25257) M2
+2066283	ET WEB_SPECIFIC_APPS Zoho ManageEngine Password Manager Pro SQL Injection (CVE-2022-40300)
+2066284	ET WEB_SPECIFIC_APPS Zoho ManageEngine OpManager addMailServerSettings SQL Injection (CVE-2018-18949) M1
+2066285	ET WEB_SPECIFIC_APPS Zoho ManageEngine OpManager addMailServerSettings SQL Injection (CVE-2018-18949) M2
+2066286	ET WEB_SPECIFIC_APPS Zoho ManageEngine OpManager getGraphData SQL Injection (CVE-2018-20173)
+2066287	ET WEB_SPECIFIC_APPS Zoho ManageEngine OpManager setManaged SQL Injection (CVE-2018-17283)
+2066288	ET WEB_SPECIFIC_APPS Zoho ManageEngine OpManager getReportData SQL Injection (CVE-2021-41288)
+2068447	ET WEB_SPECIFIC_APPS Fortigate Forticlient EMS HTTP Site Header SQL injection attempt (CVE-2026-21643)
+2068893	ET WEB_SPECIFIC_APPS Mailcow Second-Order SQL Injection via quarantine_category (CVE-2026-40871)
+2069337	ET WEB_SPECIFIC_APPS Cacti graph_view.php rfilter parameter SQL Injection Attempt (CVE-2023-39361)
+2071536	ET WEB_SPECIFIC_APPS Metabase Password Reset SQL Injection (CVE-2026-72898)
+2071607	ET WEB_SPECIFIC_APPS Progress WhatsUp Gold GetStatisticalMonitorList SQL Injection Authentication Bypass (CVE-2024-6671)
+2071986	ET WEB_SPECIFIC_APPS Sangoma Switchvox PhoneIP Parameter SQL Injection Attempt (CVE-2026-9586)

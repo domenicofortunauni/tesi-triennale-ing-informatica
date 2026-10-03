@@ -1,0 +1,5 @@
+suricata/
+__pycache__/
+*.pyc
+.venv/
+*.crdownload
