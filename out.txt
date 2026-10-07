@@ -1,0 +1,102 @@
+======================================================================
+DIAGNOSTICA
+======================================================================
+Firme Suricata che hanno fatto match (sid | n | categoria | firma):
+   2200074 | 1498 | motore  (escluse) | SURICATA TCPv4 invalid checksum
+   2017515 |  125 | UA      (escluse) | ET INFO User-Agent (python-requests) Inbound to Webserver
+   2016673 |    8 | ATTACCO (conteggiata)    | ET WEB_SERVER SQL Errors in HTTP 500 Response (error in your SQL syntax)
+   2016935 |    4 | ATTACCO (conteggiata)    | ET WEB_SERVER SQL Injection Select Sleep Time Delay
+   2053468 |    3 | ATTACCO (conteggiata)    | ET WEB_SERVER Possible SQL Injection UNION SELECT in HTTP Request Body
+
+Tag Zeek osservati nelle http.log: ['URI_POLICY', 'URI_SQLI']
+
+Falsi positivi del default-deny sul traffico legittimo (classe | tid | uri):
+  benigne       |  23 | /api/v1/search?name=caffè&tid=23
+  benigne       |  38 | /api/v1/search?name=macchina+per+il+caffè&tid=38
+  sospette      |  61 | /api/v1/search?name=caffè&tid=61
+  sospette      |  62 | /api/v1/search?name=tè&tid=62
+  sospette      |  63 | /api/v1/search?name=perché&tid=63
+  sospette      |  64 | /api/v1/search?name=città&tid=64
+  sospette      |  65 | /api/v1/search?name=Peppè&tid=65
+  sospette      |  74 | /api/v1/search?name=libro+C++&tid=74
+  sospette      |  75 | /api/v1/search?name=adattatore+AT&T&tid=75
+  sospette      |  76 | /api/v1/search?name=sconto+50%&tid=76
+  sospette      |  78 | /api/v1/search?name=offerta+1+1&tid=78
+  sospette      |  79 | /api/v1/search?name=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&tid=79
+  sospette      |  80 | /api/v1/search?name=tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+tastiera+&tid=80
+  sospette      |  84 | /api/v1/session?tid=84
+
+Attacco via GET non rilevato da Zeek-firme (tid | uri):
+  118 | /api/v1/search?name=zzz%'+/*!UNION*/+/*!SELECT*/+id,0,username,password,'',''+FROM+users+--+&tid=118
+  119 | /api/v1/search?name=keyboard%27+OR+%271%27=%271+--+&tid=119
+
+Regole Suricata per richiesta di attacco (esclusi UA_requests-TCP_checksum):
+  tid  99 (sqli_union, POST): 2053468 | ET WEB_SERVER Possible SQL Injection UNION SELECT in HTTP Request Body
+  tid 101 (sqli_union, POST): 2053468 | ET WEB_SERVER Possible SQL Injection UNION SELECT in HTTP Request Body
+  tid 110 (sqli_time, GET): 2016935 | ET WEB_SERVER SQL Injection Select Sleep Time Delay
+  tid 111 (sqli_time, GET): 2016935 | ET WEB_SERVER SQL Injection Select Sleep Time Delay
+  tid 113 (sqli_time, GET): 2016935 | ET WEB_SERVER SQL Injection Select Sleep Time Delay
+  tid 123 (sqli_obfuscated, POST): 2053468 | ET WEB_SERVER Possible SQL Injection UNION SELECT in HTTP Request Body
+  tid 124 (sqli_obfuscated, GET): 2016935 | ET WEB_SERVER SQL Injection Select Sleep Time Delay
+
+Regole Suricata sul traffico legittimo (esclusi UA_requests-TCP_checksum):
+  tid  56 (sospette): 2016673 | ET WEB_SERVER SQL Errors in HTTP 500 Response (error in your SQL syntax)
+  tid  57 (sospette): 2016673 | ET WEB_SERVER SQL Errors in HTTP 500 Response (error in your SQL syntax)
+  tid  58 (sospette): 2016673 | ET WEB_SERVER SQL Errors in HTTP 500 Response (error in your SQL syntax)
+  tid  59 (sospette): 2016673 | ET WEB_SERVER SQL Errors in HTTP 500 Response (error in your SQL syntax)
+  tid  60 (sospette): 2016673 | ET WEB_SERVER SQL Errors in HTTP 500 Response (error in your SQL syntax)
+  tid  84 (sospette): 2016673 | ET WEB_SERVER SQL Errors in HTTP 500 Response (error in your SQL syntax)
+
+======================================================================
+TABELLA — esito per singola richiesta di attacco
+======================================================================
+ tid classe           meth Suricata Zsign Zanomaly
+  93 sqli_logic       POST    no    no    sì
+  94 sqli_logic       POST    no    no    sì
+  95 sqli_logic       POST    no    no    sì
+  96 sqli_logic       POST    no    no    sì
+  97 sqli_logic       POST    no    no    sì
+  98 sqli_union       GET     no    sì    sì
+  99 sqli_union       POST    sì    no    sì
+ 100 sqli_union       GET     no    sì    sì
+ 101 sqli_union       POST    sì    no    sì
+ 102 sqli_union       GET     no    sì    sì
+ 103 sqli_union       GET     no    sì    sì
+ 104 sqli_blind       GET     no    sì    sì
+ 105 sqli_blind       GET     no    sì    sì
+ 106 sqli_blind       GET     no    sì    sì
+ 107 sqli_blind       GET     no    sì    sì
+ 108 sqli_blind       GET     no    sì    sì
+ 109 sqli_blind       POST    no    no    sì
+ 110 sqli_time        GET     sì    sì    sì
+ 111 sqli_time        GET     sì    sì    sì
+ 112 sqli_time        POST    no    no    sì
+ 113 sqli_time        GET     sì    sì    sì
+ 114 sqli_obfuscated  GET     no    sì    sì
+ 115 sqli_obfuscated  GET     no    sì    sì
+ 116 sqli_obfuscated  GET     no    sì    sì
+ 117 sqli_obfuscated  GET     no    sì    sì
+ 118 sqli_obfuscated  GET     no    no    sì
+ 119 sqli_obfuscated  GET     no    no    sì
+ 120 sqli_obfuscated  GET     no    sì    sì
+ 121 sqli_obfuscated  GET     no    sì    sì
+ 122 sqli_obfuscated  POST    no    no    sì
+ 123 sqli_obfuscated  POST    sì    no    sì
+ 124 sqli_obfuscated  GET     sì    sì    sì
+ 125 sqli_obfuscated  GET     no    sì    sì
+
+======================================================================
+TABELLA — metriche sui soli tentativi di attacco
+======================================================================
+configurazione                    TP  FP  FN   TPR   FPR    F1
+Suricata + ET                      7   6  26  0,21  0,07  0,30
+Zeek + detect-sql-injection       20   0  13  0,61  0,00  0,75
+Zeek + default deny               33  14   0  1,00  0,17  0,82
+
+======================================================================
+TABELLA — sondaggi e falsi allarmi sul traffico atipico
+======================================================================
+configurazione                    sondaggi  falsi atipici
+Suricata + ET                          2/8           6/29
+Zeek + detect-sql-injection            0/8           0/29
+Zeek + default deny                    6/8          12/29
